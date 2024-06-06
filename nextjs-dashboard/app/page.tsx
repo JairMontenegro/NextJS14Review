@@ -31,7 +31,20 @@ export default function Page() {
           </Link>
         </div>
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
-          {/* Add Hero Images Here */}
+          <Image // In next JS this component Image that's the eslitntc recommend us to use instead a img html node, becaouse the component add a performance and imporve its charge, and change the format to webp after recoginze it, by default this image component is lazy load
+            width={1000}
+            height={760}
+            className="hidden md:block"
+            src="/hero-desktop.png"
+            alt="screenshot of the dashboard"
+          />
+          <Image // In next JS this component Image that's the eslitntc recommend us to use instead a img html node, becaouse the component add a performance and imporve its charge, and change the format to webp after recoginze it, by default this image component is lazy load
+            width={560}
+            height={620}
+            className="block md:hidden"
+            src="/hero-mobile.png"
+            alt="screenshot of the dashboard"
+          />
         </div>
       </div>
     </main>
